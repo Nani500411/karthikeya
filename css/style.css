@@ -20,41 +20,42 @@
   bottom: 45px;
   z-index: 99;
 }
+
 /*** dial flot ***/
 .dialme {
   position: fixed;
   margin-right: 0px;
   margin-bottom: 80px;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#125252;
-	color:#FFF;
-	border-radius:50px;
-	text-align: center;
-  font-size:43px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #125252;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 43px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
 /*** whatsapp float ***/
 .whatsapp {
   position: fixed;
-  
+
   margin-right: 0px;
   margin-bottom: 18px;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align: center;
-  font-size:43px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 43px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 
 
@@ -241,7 +242,7 @@
   background: rgba(15, 23, 43, 0.7);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   color: var(--light);
 }
 
@@ -331,11 +332,9 @@
   left: 0;
   height: 100%;
   width: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
@@ -346,15 +345,14 @@
   right: 0;
   height: 100%;
   width: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
 @media (min-width: 768px) {
+
   .testimonial-carousel::before,
   .testimonial-carousel::after {
     width: 200px;
@@ -362,6 +360,7 @@
 }
 
 @media (min-width: 992px) {
+
   .testimonial-carousel::before,
   .testimonial-carousel::after {
     width: 300px;
@@ -479,12 +478,14 @@
   overflow: hidden;
   transform: skew(5deg);
 }
+
 .containercar .cardcar {
   flex: 1;
   transition: all 1s ease-in-out;
   height: 75vmin;
   position: relative;
 }
+
 .containercar .cardcar .card__headcar {
   color: black;
   background: rgba(255, 30, 173, 0.75);
@@ -500,12 +501,15 @@
   font-size: 1em;
   white-space: nowrap;
 }
+
 .containercar .cardcar:hover {
   flex-grow: 10;
 }
+
 .containercar .cardc:hover img {
   filter: grayscale(0);
 }
+
 .containercar .cardcar:hover .card__headcar {
   text-align: center;
   top: calc(100% - 2em);
@@ -514,12 +518,14 @@
   font-size: 1em;
   transform: rotate(0deg) skew(-5deg);
 }
+
 .containercar .cardcar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 1s ease-in-out;
 }
+
 .containercar .cardcar:not(:nth-child(5)) {
   margin-right: 1em;
 }
@@ -530,87 +536,144 @@
 
 
 /* Popup box BEGIN */
-*, *::after, *::before {
-	box-sizing: border-box;
-  }
-  
-  .modalp {
-	position: fixed;
-  
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	transition: 200ms ease-in-out;
-	border: 1px solid black;
-	border-radius: 10px;
-	z-index: 10;
-	background-color: white;
-	width: 500px;
-	max-width: 80%;
-  }
-  
-  .modalp.active {
+/*
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-	transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-headerp {
-	padding: 10px 15px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid black;
-  
-  }
-  
-  .modal-headerp .titlep {
-	font-size: 1.25rem;
-	font-weight: bold;
-  
-  }
-  
-  .modal-headerp .close-button {
-	cursor: pointer;
-	border: none;
-	outline: none;
-	background: none;
-	font-size: 1.25rem;
-	font-weight: bold;
-  
-  }
-  
-  .modal-bodyp {
-    background-color: rgba(219, 202, 44, 0.76);
+.modal {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+}
+
+.modal-body {
+  background-color: rgba(219, 202, 44, 0.76);
   height: 400px;
   border: 1px solid black;
   color: #000000;
   overflow-y: scroll;
   padding: 10px 15px;
-  }
-  .modal-bodyp .imgpop {
-    
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  
-  
-  #overlay {
-  
-	position: fixed;
-	opacity: 0;
-	transition: 200ms ease-in-out;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(26, 24, 24, 0.589);
-	pointer-events: none;
-  }
-  
-  #overlay.active {
-	opacity: 1;
-	pointer-events: all;
-  }
+}
+
+.modal-body .imgpop {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+#overlay {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+  pointer-events: none;
+
+}
+
+#overlay.active {
+
+
+
+
+
+  opacity: 1;
+  pointer-events: all;
+}*/
+/* Hidden by default */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(248, 241, 241);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Show the modal when it's active */
+.modal.active,
+#overlay.active {
+  display: block;
+}
+
+/* Close button styles */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Scrolling content */
+.modal-content {
+  max-height: 90%;
+  /* Set a maximum height for scrolling content */
+  overflow: auto;
+  /* Enable scrolling when content exceeds the height */
+}
