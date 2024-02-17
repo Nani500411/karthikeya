@@ -163,13 +163,6 @@ openModalButtons.forEach(button => {
     })
 })
 
-overlay.addEventListener('click', () => {
-    const modals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal => {
-        closeModal(modal)
-    })
-})
-
 closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.modal')
@@ -188,3 +181,43 @@ function closeModal(modal) {
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+
+
+
+
+
+
+
+// hfhgfjhgj?
+// Add event listeners to all buttons with IDs starting with "openFormButton"
+for (let i = 1; i <= 14; i++) {
+    const button = document.getElementById("openFormButton" + i);
+    if (button) {
+      button.addEventListener("click", openPopup);
+    }
+  }
+  
+  function openPopup() {
+    document.getElementById("popupContainer").style.display = "flex";
+  }
+  
+  // Add event listener to close button
+  document.getElementById("closeform").addEventListener("click", function() {
+    document.getElementById("popupContainer").style.display = "flex";
+  });
+  
+  // Add event listener to close popup when clicking outside the form
+  document.getElementById("popupContainer").addEventListener("click", function(event) {
+    if (event.target === this) {
+      document.getElementById("popupContainer").style.display = "none";
+    }
+  });
+  
+ 
+
+
+  
+
+
+  

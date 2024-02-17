@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+
 :root {
   --primary: #06bbcc;
   --light: #f0fbfc;
@@ -186,7 +186,6 @@
     opacity: 1;
   }
 }
-
 
 
 
@@ -680,3 +679,164 @@
   overflow: auto;
   /* Enable scrolling when content exceeds the height */
 }
+
+
+
+
+
+
+
+
+
+/* hjhjhftdch */
+
+
+.formcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.background-container {
+  background-image: /*url('../img2/vehicles/hector3.jpg'),*/ linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(116, 117, 135, 0.51) 100%);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 50% 100%, 0% 100%, 50% 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(1px); /* Apply blur effect */
+}
+
+.formcontainer {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(116, 117, 135, 0.8); /* Background color with transparency */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.input-box {
+  margin-bottom: 10px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-box span {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.input-box input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-box input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* vddghgrj */
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.custom-popup-form {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.custom-form-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(116, 117, 135, 0.8);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.custom-contact-form {
+  text-align: left;
+}
+
+.custom-contact-form h2 {
+  color: #c4efff;
+  text-shadow: #000000;
+}
+
+.custom-input-box {
+  margin-bottom: 10px;
+}
+
+.custom-input-box input[type="text"],
+.custom-input-box input[type="email"],
+.custom-input-box input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.custom-input-box span {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.custom-input-box input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-input-box input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
