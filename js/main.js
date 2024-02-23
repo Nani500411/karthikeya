@@ -229,7 +229,7 @@ function openPopup() {
 
 // Add event listener to close button
 document.getElementById("closeform").addEventListener("click", function() {
-    document.getElementById("popupContainer").style.display = "none";
+    document.getElementById("popupContainer").style.display = "flex";
 });
 
 // Add event listener to close popup when clicking outside the form
