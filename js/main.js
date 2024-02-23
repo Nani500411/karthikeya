@@ -191,29 +191,53 @@ function closeModal(modal) {
 
 // hfhgfjhgj?
 // Add event listeners to all buttons with IDs starting with "openFormButton"
+// for (let i = 1; i <= 14; i++) {
+//     const button = document.getElementById("openFormButton" + i);
+//     if (button) {
+//       button.addEventListener("click", openPopup);
+//     }
+//   }
+  
+//   function openPopup() {
+//     document.getElementById("popupContainer").style.display = "flex";
+//   }
+  
+//   // Add event listener to close button
+//   document.getElementById("closeform").addEventListener("click", function() {
+//     document.getElementById("popupContainer").style.display = "flex";
+//   });
+  
+//   // Add event listener to close popup when clicking outside the form
+//   document.getElementById("popupContainer").addEventListener("click", function(event) {
+//     if (event.target === this) {
+//       document.getElementById("popupContainer").style.display = "none";
+//     }
+//   });
+  // Automatically open the popup after 5 seconds of page load
+setTimeout(openPopup, 8000); // 5000 milliseconds = 5 seconds
+
 for (let i = 1; i <= 14; i++) {
     const button = document.getElementById("openFormButton" + i);
     if (button) {
       button.addEventListener("click", openPopup);
     }
-  }
-  
-  function openPopup() {
+}
+
+function openPopup() {
     document.getElementById("popupContainer").style.display = "flex";
-  }
-  
-  // Add event listener to close button
-  document.getElementById("closeform").addEventListener("click", function() {
-    document.getElementById("popupContainer").style.display = "flex";
-  });
-  
-  // Add event listener to close popup when clicking outside the form
-  document.getElementById("popupContainer").addEventListener("click", function(event) {
+}
+
+// Add event listener to close button
+document.getElementById("closeform").addEventListener("click", function() {
+    document.getElementById("popupContainer").style.display = "none";
+});
+
+// Add event listener to close popup when clicking outside the form
+document.getElementById("popupContainer").addEventListener("click", function(event) {
     if (event.target === this) {
-      document.getElementById("popupContainer").style.display = "none";
+        document.getElementById("popupContainer").style.display = "none";
     }
-  });
-  
+});
  
 
 
