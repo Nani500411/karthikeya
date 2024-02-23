@@ -250,12 +250,18 @@ function closeModal(modal) {
 // Automatically open the popup after 5 seconds of page load
 setTimeout(openPopup, 9000); // 5000 milliseconds = 5 seconds
 
+
 for (let i = 1; i <= 14; i++) {
     const button = document.getElementById("openFormButton" + i);
     if (button) {
       button.addEventListener("click", openPopup);
     }
 }
+
+
+
+
+
 
 function openPopup() {
     document.getElementById("popupContainer").style.display = "flex";
